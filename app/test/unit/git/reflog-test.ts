@@ -9,7 +9,7 @@ import {
 } from '../../../src/lib/git'
 import { setupFixtureRepository } from '../../helpers/repositories'
 import moment from 'moment'
-import { GitProcess } from 'dugite'
+import { GitProcess } from '@shiftkey/dugite'
 import { offsetFromNow } from '../../../src/lib/offset-from'
 
 async function createAndCheckout(
