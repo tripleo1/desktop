@@ -9581,6 +9581,11 @@ set-getter@^0.1.0:
   dependencies:
     to-object-path "^0.3.0"
 
+set-immediate-shim@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-2.0.0.tgz#5bf3ecf5d0d6eda9a335dbb5bfd0733f3e149d8d"
+  integrity sha512-a2GXgsl1Wu9qulGQeY3c3KRVgcmxeaOI15xenfNJ1eBX6BBavWCNXdX9gcvQJAogSROaU3o5DTQUVcRdzbIOfA==
+
 set-immediate-shim@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
