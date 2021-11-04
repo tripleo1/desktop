@@ -1,8 +1,7 @@
 module.exports = {
   roots: ['<rootDir>/changelog/', '<rootDir>/draft-release/'],
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest',
-  },
+  preset: 'ts-jest',
+  testEnvironment: 'node',
   testMatch: ['**/*-test.ts'],
   moduleFileExtensions: ['ts', 'js', 'jsx', 'json', 'node'],
   collectCoverageFrom: [
