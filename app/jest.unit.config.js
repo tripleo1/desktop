@@ -4,6 +4,8 @@ module.exports = {
     '^.+\\.tsx?$': 'ts-jest',
     '\\.m?jsx?$': 'jest-esm-transformer',
   },
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   testMatch: ['**/unit/**/*-test.ts{,x}'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   setupFiles: ['<rootDir>/test/globals.ts', '<rootDir>/test/unit-test-env.ts'],
@@ -24,4 +26,9 @@ module.exports = {
   coverageReporters: ['text-summary', 'json', 'html', 'cobertura'],
   // For now, @github Node modules required to be transformed by jest-esm-transformer
   transformIgnorePatterns: ['node_modules/(?!(@github))'],
+  globals: {
+    'ts-jest': {
+      babelConfig: true,
+    },
+  },
 }
