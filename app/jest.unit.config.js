@@ -1,8 +1,7 @@
 module.exports = {
   roots: ['<rootDir>/src/', '<rootDir>/test/'],
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest',
-  },
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   testMatch: ['**/unit/**/*-test.ts{,x}'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   setupFiles: ['<rootDir>/test/globals.ts', '<rootDir>/test/unit-test-env.ts'],
@@ -23,7 +22,7 @@ module.exports = {
   coverageReporters: ['text-summary', 'json', 'html', 'cobertura'],
   globals: {
     'ts-jest': {
-      useBabelrc: true,
+      babelConfig: true,
     },
   },
 }
