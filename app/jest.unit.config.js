@@ -28,7 +28,7 @@ module.exports = {
   transformIgnorePatterns: ['node_modules/(?!(@github))'],
   globals: {
     'ts-jest': {
-      babelConfig: true,
+      babelConfig: false,
     },
   },
 }

@@ -16,7 +16,7 @@ module.exports = {
   coverageReporters: ['text-summary', 'json', 'html', 'cobertura'],
   globals: {
     'ts-jest': {
-      useBabelConfig: true,
+      babelConfig: false,
     },
   },
 }
